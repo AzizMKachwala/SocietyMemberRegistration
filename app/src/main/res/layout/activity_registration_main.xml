@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/_10sdp"
+    android:orientation="vertical"
+    android:padding="@dimen/_10sdp"
+    tools:context=".Activity.RegistrationMainActivity">
+
+    <TextView
+        android:id="@+id/txtHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#35166C"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:minHeight="@dimen/_20sdp"
+        android:text="XYZ SOCIETY"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/txtHeading1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#35166C"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:gravity="center"
+        android:minHeight="@dimen/_20sdp"
+        android:text="REGISTRATION PAGE"
+        android:textColor="#FFFFFF" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:elevation="@dimen/_1sdp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/_10sdp">
+
+            <EditText
+                android:id="@+id/etvFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="FIRST NAME*"
+                android:imeOptions="actionNext"
+                android:inputType="textAutoComplete"
+                android:minHeight="@dimen/_45sdp"
+                android:textColorHint="#757575"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <EditText
+                android:id="@+id/etvLastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="LAST NAME*"
+                android:imeOptions="actionDone"
+                android:inputType="textAutoComplete"
+                android:minHeight="@dimen/_45sdp"
+                android:textColorHint="#757575"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <EditText
+                android:id="@+id/etvSpinnerUnit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="SPINNER UNIT*"
+                android:minHeight="@dimen/_45sdp"
+                android:textColorHint="#757575"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text=" Nested RecyclerView Unit : "-->
+            <!--android:textColor="#35166C"-->
+            <!--android:textStyle="bold" />-->
+
+            <!--<EditText-->
+            <!--android:id="@+id/etvRecyclerViewUnit"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:focusable="false"-->
+            <!--android:focusableInTouchMode="false"-->
+            <!--android:hint="NESTED RECYCLERVIEW UNIT*"-->
+            <!--android:minHeight="@dimen/_45sdp"-->
+            <!--android:textColorHint="#757575"-->
+            <!--tools:ignore="SpeakableTextPresentCheck" />-->
+
+            <EditText
+                android:id="@+id/etvDatePicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:hint="DATE*"
+                android:textColorHint="#757575"
+                android:focusableInTouchMode="false"
+                android:minHeight="@dimen/_45sdp"/>
+
+            <EditText
+                android:id="@+id/etvDateOfBirthPicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:hint="DATE OF BIRTH*"
+                android:textColorHint="#757575"
+                android:focusableInTouchMode="false"
+                android:minHeight="@dimen/_45sdp"/>
+
+            <EditText
+                android:id="@+id/etvEventDatePicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:hint="EVENT DATE*"
+                android:textColorHint="#757575"
+                android:focusableInTouchMode="false"
+                android:minHeight="@dimen/_45sdp"/>
+
+            <EditText
+                android:id="@+id/etvTimePicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="TIME*"
+                android:textColorHint="#757575"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:minHeight="@dimen/_45sdp"/>
+
+            <RadioGroup
+                android:id="@+id/genderRadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/maleRadio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MALE"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <RadioButton
+                    android:id="@+id/FemaleRadio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FEMALE"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnRegister"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Register"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <Button
+                    android:id="@+id/btnReset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Reset"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
+
+
